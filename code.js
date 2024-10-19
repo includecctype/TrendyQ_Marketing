@@ -23,6 +23,8 @@ const topbarheight = parseFloat(getComputedStyle(topbar).height)
 const navbarnotop = document.querySelector('.navbar > :nth-child(2)')
 const navbar = document.querySelector(".navbar")
 
+/*
+
 if(laptopwidth.matches){
 
     window.addEventListener('scroll', function(){
@@ -96,6 +98,8 @@ if(phoneandtabletwidth.matches){
     })
 
 }
+
+*/
 
 gsap.to(navbar, {
     scrollTrigger: {
