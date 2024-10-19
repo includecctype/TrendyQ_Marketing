@@ -1,0 +1,2 @@
+1. Scroll Trigger pin can have no end value define
+2. use if(window.scrollY >= 3000) for Top Bar
