@@ -6,7 +6,6 @@ const smoothscroll = ScrollSmoother.create({
     smooth: 1.5,
     wrapper: ".wrap",
     content: ".content",
-    normalizeScroll: true,
 })
 
 /* Standard match media */
