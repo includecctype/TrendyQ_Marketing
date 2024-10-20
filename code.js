@@ -85,8 +85,8 @@ missionspacing.style.height = `${navbarheight}px`
 
 const body = document.querySelector('body')
 const dropdown = document.querySelector('.dropdown')
-const opendropdown = document.querySelector('.navbar > div:nth-child(2) > svg:nth-child(8)')
-const closedropdown = document.querySelector('.dropdown > svg:nth-child(1)')
+const opendropdown = document.querySelector('.navbar > :nth-child(2) > :nth-child(8)')
+const closedropdown = document.querySelector('.dropdown > :nth-child(1)')
 
 opendropdown.onclick = function(){
     dropdown.style.top = `${window.pageYOffset}px`
