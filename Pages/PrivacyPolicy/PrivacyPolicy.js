@@ -39,7 +39,7 @@ gsap.to(navbar, {
         pinSpacing: false,
         toggleActions: "play none none none",
         start: "top top",
-        end: "+=1000"
+        end: "+=3500"
     }
 })
 
