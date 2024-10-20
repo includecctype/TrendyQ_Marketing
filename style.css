@@ -197,9 +197,10 @@ body{
 .mission{
     width: 100vw;
     height: 80vh;
-    background-image: url('Test_Image/stockimageperson2.jpg');
-    background-repeat: none;
-    background-size: cover;
+    background-image: url('Images/founderwhite.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 75%;
 }
 
 .mission > div{
