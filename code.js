@@ -104,6 +104,8 @@ if(phoneandtabletwidth.matches){
 
 gsap.to(navbar, {
     scrollTrigger: {
+        normalizeScroll: true,
+        anticipatePin: 1,
         trigger: navbar,
         pin: true,
         pinSpacing: false,
