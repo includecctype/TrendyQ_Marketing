@@ -806,7 +806,7 @@ Their Awards section goes here
     }
 
     .exclusive > div > h1{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .exclusive > div > div > div{
@@ -820,7 +820,7 @@ Their Awards section goes here
     }
 
     .exclusive > div > div > div > p{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
 }
