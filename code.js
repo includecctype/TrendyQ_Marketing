@@ -111,6 +111,12 @@ gsap.to(navbar, {
     }
 })
 
+window.addEventListener('resize', function(){
+
+    ScrollTrigger.refresh()
+
+})
+
 // Mission Spacing
 
 /*
