@@ -134,6 +134,18 @@ body{
     }
 }
 
+@media (max-width: 600px){
+
+    .navbar > :nth-child(2) > :nth-child(1){
+        margin: 0 auto 0 0.5rem;
+    }
+
+    .navbar > :nth-child(2) > a{
+        margin: 0 0.5rem 0 auto;
+    }
+
+}
+
 /* drop down */
 
 .dropdown{
