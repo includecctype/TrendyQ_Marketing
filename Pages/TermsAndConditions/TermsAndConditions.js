@@ -76,7 +76,7 @@ gsap.to(titlediv, {
     scrollTrigger: {
         trigger: titlediv,
         start: "center center",
-        end: "center+=150 center",
+        end: "bottom center",
         scrub: true,
     }
 })
