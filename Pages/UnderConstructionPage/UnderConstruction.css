@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow: hidden;
+    background: radial-gradient(orange, black);
+}
+
+.construction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.construction > h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem;
+    color: white;
+}
