@@ -262,65 +262,69 @@ for(let i = 0; i < 4; i++){
 
         /* New Images, create index for word and image swap */
 
-const toppickimg1 = document.querySelector('.toppickphone > img:nth-child(1)')
-const toppickimg2 = document.querySelector('.toppickphone > img:nth-child(2)')
+if(phonewidth.matches){
+    
+    const toppickimg1 = document.querySelector('.toppickphone > img:nth-child(1)')
+    const toppickimg2 = document.querySelector('.toppickphone > img:nth-child(2)')
 
-function toppickimg1function(){
-    gsap.to(toppickimg1, {
-        duration: 1,
-        x: 450,
-        rotation: 720,
-        yoyo: false,
-        onStart: function(){
-            toppickimg2.removeEventListener("click", toppickimg2function)
+    function toppickimg1function(){
+        gsap.to(toppickimg1, {
+            duration: 1,
+            x: 450,
+            rotation: 720,
+            yoyo: false,
+            onStart: function(){
+                toppickimg2.removeEventListener("click", toppickimg2function)
 
-            setTimeout(function(){
-                toppickimg2.addEventListener("click", toppickimg2function)
-            }, 1100)
-        },
-        onComplete: function(){
-            toppickimg2.style.zIndex = "1"
-            toppickimg1.style.zIndex = "0"
+                setTimeout(function(){
+                    toppickimg2.addEventListener("click", toppickimg2function)
+                }, 1100)
+            },
+            onComplete: function(){
+                toppickimg2.style.zIndex = "1"
+                toppickimg1.style.zIndex = "0"
 
-            gsap.to(toppickimg1, {
-                duration: 0,
-                x: 0,
-                rotation: 0,
-                yoyo: false,
-            })
-        }
-    })
+                gsap.to(toppickimg1, {
+                    duration: 0,
+                    x: 0,
+                    rotation: 0,
+                    yoyo: false,
+                })
+            }
+        })
+    }
+
+    function toppickimg2function(){
+        gsap.to(toppickimg2, {
+            duration: 1,
+            x: 450,
+            rotation: 720,
+            yoyo: false,
+            onStart: function(){
+                toppickimg1.removeEventListener("click", toppickimg1function)
+
+                setTimeout(function(){
+                    toppickimg1.addEventListener("click", toppickimg1function)
+                }, 1100)
+            },
+            onComplete: function(){
+                toppickimg1.style.zIndex = "1"
+                toppickimg2.style.zIndex = "0"
+
+                gsap.to(toppickimg2, {
+                    duration: 0,
+                    x: 0,
+                    rotation: 0,
+                    yoyo: false,
+                })
+            }
+        })
+    }
+
+    toppickimg1.addEventListener("click", toppickimg1function)
+    toppickimg2.addEventListener("click", toppickimg2function)
+
 }
-
-function toppickimg2function(){
-    gsap.to(toppickimg2, {
-        duration: 1,
-        x: 450,
-        rotation: 720,
-        yoyo: false,
-        onStart: function(){
-            toppickimg1.removeEventListener("click", toppickimg1function)
-
-            setTimeout(function(){
-                toppickimg1.addEventListener("click", toppickimg1function)
-            }, 1100)
-        },
-        onComplete: function(){
-            toppickimg1.style.zIndex = "1"
-            toppickimg2.style.zIndex = "0"
-
-            gsap.to(toppickimg2, {
-                duration: 0,
-                x: 0,
-                rotation: 0,
-                yoyo: false,
-            })
-        }
-    })
-}
-
-toppickimg1.addEventListener("click", toppickimg1function)
-toppickimg2.addEventListener("click", toppickimg2function)
 
 /*
 
