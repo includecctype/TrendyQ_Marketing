@@ -324,6 +324,25 @@ p{
 
 }
 
+@media (max-width: 600px){
+
+    .contact p{
+        font-size: 0.3rem;
+    }
+
+    .contact > div > :nth-child(1) > :nth-child(1){
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact > div > :nth-child(1) > :nth-child(2){
+        width: 40px;
+        height: 20px;
+    }
+
+}
+
+
 /* footer */
 
 .footer{
@@ -354,4 +373,16 @@ p{
 
 .footer > div > p:nth-child(1){
     margin-right: auto;
+}
+
+@media (max-width: 600px){
+
+    .footer > div{
+        width: 90%;
+    }
+
+    .footer > div > p{
+        font-size: 0.5rem;
+    }
+
 }
