@@ -128,7 +128,7 @@ const opendropdown = document.querySelector('.navbar > div:nth-child(2) > svg:nt
 const closedropdown = document.querySelector('.dropdown > svg:nth-child(1)')
 
 opendropdown.onclick = function(){
-    dropdown.style.top = `${window.scrollY}px`
+    dropdown.style.top = `${window.pageYOffset}px`
     dropdown.style.display = "flex"
     smoothscroll.paused(true)
     body.style.overflowY = "hidden"
@@ -263,7 +263,7 @@ for(let i = 0; i < 4; i++){
         /* New Images, create index for word and image swap */
 
 if(phonewidth.matches){
-    
+
     const toppickimg1 = document.querySelector('.toppickphone > img:nth-child(1)')
     const toppickimg2 = document.querySelector('.toppickphone > img:nth-child(2)')
 
