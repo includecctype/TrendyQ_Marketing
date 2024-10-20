@@ -25,79 +25,33 @@ const topbarheight = parseFloat(getComputedStyle(topbar).height)
 const navbarnotop = document.querySelector('.navbar > :nth-child(2)')
 const navbar = document.querySelector(".navbar")
 
-if(laptopwidth.matches){
 
-    window.addEventListener('scroll', function(){
 
-        if(this.window.scrollY >= 1900){
+window.addEventListener('scroll', function(){
 
-            gsap.to(navbarnotop, {
+    if(this.window.scrollY >= 1900){
 
-                duration: 0.5,
-                y: -topbarheight/2,
-                onComplete: function(){
+        gsap.to(navbarnotop, {
 
-                    topbar.style.display = "none"
+            duration: 0.5,
+            y: -30,
 
-                }
+        })
 
-            })
+    }
 
-        }
+    if(this.window.scrollY <= 1900){
 
-        if(this.window.scrollY <= 1900){
+        gsap.to(navbarnotop, {
 
-            topbar.style.display = "flex"
+            duration: 0.5,
+            y: 0,
 
-            gsap.to(navbarnotop, {
+        })
 
-                duration: 0.5,
-                y: 0,
+    }
 
-            })
-
-        }
-
-    })
-
-}
-
-if(phoneandtabletwidth.matches){
-
-    window.addEventListener('scroll', function(){
-
-        if(this.window.scrollY >= 1800){
-
-            gsap.to(navbarnotop, {
-
-                duration: 0.5,
-                y: -topbarheight/2,
-                onComplete: function(){
-
-                    topbar.style.display = "none"
-
-                }
-
-            })
-
-        }
-
-        if(this.window.scrollY <= 1800){
-
-            topbar.style.display = "flex"
-
-            gsap.to(navbarnotop, {
-
-                duration: 0.5,
-                y: 0,
-
-            })
-
-        }
-
-    })
-
-}
+})
 
 gsap.to(navbar, {
     scrollTrigger: {
@@ -108,7 +62,7 @@ gsap.to(navbar, {
         pinSpacing: false,
         toggleActions: "play none none none",
         start: "top top",
-        end: "+=4000"
+        end: "+=4500"
     }
 })
 
