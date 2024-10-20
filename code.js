@@ -6,8 +6,9 @@ const smoothscroll = ScrollSmoother.create({
     smooth: 1.5,
     wrapper: ".wrap",
     content: ".content",
-    smoothTouch: 0.1,
     ignoreMobileResize: false,
+    smoothTouch: 0.5,
+    smooth: 1,
 })
 
 /* Standard match media */
