@@ -323,3 +323,35 @@ p{
     }
 
 }
+
+/* footer */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: max-content;
+    margin: 3rem 0 3rem 0;
+}
+
+.footer > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+    height: max-content;
+    border: 3px solid black;
+    border-radius: 1rem;
+    background: linear-gradient(90deg, red, orange);
+}
+
+.footer > div > p{
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.footer > div > p:nth-child(1){
+    margin-right: auto;
+}
