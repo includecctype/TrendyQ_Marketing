@@ -7,17 +7,68 @@ body{
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-decoration-line: underline;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+p{
+    font-size: 1rem;
+}
+
+@media (min-width: 600px) and (max-width: 1100px){
+    
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h2{
+        font-size: 1.4rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 600px){
+    
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
 }
 
 /* nav bar */
 
 .navbar{
+    position: fixed;
+    top: 0;
     display: flex;
     display: row;
     justify-content: flex-end;
     align-items: center;
     width: 100vw;
     background: linear-gradient(90deg, orange, red);
+    z-index: 10;
 }
 
 .navbar > :nth-child(1){
@@ -39,13 +90,13 @@ body{
     color: black;
 }
 
-.navbar > :nth-child(8){
+.navbar > :nth-child(6){
     display: none;
     margin: 0 1rem 0 auto;
     transition: fill 0.5s linear;
 }
 
-.navbar > :nth-child(8):hover{
+.navbar > :nth-child(6):hover{
     fill: black;
 }
 
@@ -67,7 +118,7 @@ body{
         display: none;
     }
 
-    .navbar > :nth-child(8){
+    .navbar > :nth-child(6){
         display: flex;
     }
 
@@ -123,4 +174,152 @@ body{
 
 }
 
+/* title */
 
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+/* details */
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: max-content;
+}
+
+.details > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: max-content;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid black;
+    border-radius: 1rem;
+    margin: 5rem 0 5rem 0;
+}
+
+.details > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1rem;
+}
+
+.details > div > div > h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.details > div > div > div{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: height 0.5s linear;
+}
+
+@media (max-width: 1100px){
+
+    .details > div{
+        width: 90%;
+    }
+
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: max-content;
+}
+
+.contact p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.7rem;
+}
+
+.contact > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-radius: 1rem;
+    background-color: black;
+}
+
+.contact > div > :nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 2rem;
+}
+
+.contact > div > :nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact > div > :nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 0 auto;
+}
+
+.contact > div > :nth-child(2) > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1100px){
+
+    .contact p{
+        font-size: 0.5rem;
+    }
+
+    .contact > div{
+        width: 90%;
+    }
+
+    .contact > div > div{
+        margin: 0.5rem;
+    }
+
+    .contact > div > :nth-child(1) > :nth-child(1){
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact > div > :nth-child(1) > :nth-child(2){
+        width: 80px;
+        height: 40px;
+    }
+
+    .contact > div > :nth-child(2) > div{
+        flex-direction: column;
+    }
+
+}
