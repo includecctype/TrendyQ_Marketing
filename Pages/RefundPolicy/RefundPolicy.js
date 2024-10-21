@@ -85,12 +85,21 @@ gsap.to(titlediv, {
 
 const togglecause1 = document.querySelector('.details > div > div > :nth-child(1)')
 const toggleeffect1 = document.querySelector('.details > div > div > :nth-child(2)')
+const togglecause2 = document.querySelector('.details > div > div > :nth-child(3)')
+const toggleeffect2 = document.querySelector('.details > div > div > :nth-child(4)')
+const togglecause3 = document.querySelector('.details > div > div > :nth-child(5)')
+const toggleeffect3 = document.querySelector('.details > div > div > :nth-child(6)')
+const togglecause4 = document.querySelector('.details > div > div > :nth-child(7)')
+const toggleeffect4 = document.querySelector('.details > div > div > :nth-child(8)')
 
 const arrow1 = document.querySelector('.details > div > div > :nth-child(1) > svg')
 const arrow2 = document.querySelector('.details > div > div > :nth-child(3) > svg')
 const arrow3 = document.querySelector('.details > div > div > :nth-child(5) > svg')
 
 let index1 = 0
+let index2 = 0
+let index3 = 0
+let index4 = 0
 
 togglecause1.onclick = function(){
 
@@ -105,6 +114,60 @@ togglecause1.onclick = function(){
         index1--
 
         toggleeffect1.style.display = "none"
+
+    }
+
+}
+
+togglecause2.onclick = function(){
+
+    if(index2 == 0){
+
+        index2++
+
+        toggleeffect2.style.display = "flex"
+
+    }else if(index2 == 1){
+
+        index2--
+
+        toggleeffect2.style.display = "none"
+
+    }
+
+}
+
+togglecause3.onclick = function(){
+
+    if(index3 == 0){
+
+        index3++
+
+        toggleeffect3.style.display = "flex"
+
+    }else if(index3 == 1){
+
+        index3--
+
+        toggleeffect3.style.display = "none"
+
+    }
+
+}
+
+togglecause4.onclick = function(){
+
+    if(index4 == 0){
+
+        index4++
+
+        toggleeffect4.style.display = "flex"
+
+    }else if(index4 == 1){
+
+        index4--
+
+        toggleeffect4.style.display = "none"
 
     }
 
