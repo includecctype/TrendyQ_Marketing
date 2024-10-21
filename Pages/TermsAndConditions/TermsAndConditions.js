@@ -333,7 +333,7 @@ togglecause12.onclick = function(){
 
     }else if(index12 == 1){
 
-        index1--
+        index12--
 
         toggleeffect12.style.display = "none"
 
