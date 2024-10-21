@@ -6,3 +6,7 @@ Phone number:
 
 email:
 admin@trendyqmarketing.com
+
+website:
+www.trendyqmarketing.co
+
